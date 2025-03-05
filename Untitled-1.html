@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Lucas Leclerc-Vigneron</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #000000, #3a3a3a);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        .dropdown {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        .dropbtn {
+            background-color: #007BFF;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .dropbtn:hover {
+            background-color: #0056b3;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            overflow: hidden;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s ease;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1.5rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        .section {
+            padding: 3rem;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #222;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lucas Leclerc</h1>
+        <p>Étudiant en BTS SIO | Passionné Des Nouvelle Technologie </p>
+        <div class="dropdown">
+            <button class="dropbtn">Téléchargements</button>
+            <div class="dropdown-content">
+                <a href="Capture d’écran 2024-12-19 090050.png" download="CV_Lucas_Leclerc.pdf">Télécharger mon CV</a>
+                <a href="lettre_de_motivation.pdf" download="Lettre_Motivation_Lucas_Leclerc.pdf">Télécharger ma Lettre de Motivation</a>
+                <a href="#projects">Portfolio</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>À propos</h2>
+        <p>Bienvenue sur mon portfolio ! Je suis Lucas Leclerc, étudiant en BTS SIO et passionné d’informatique et de viticulture.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projets</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Réseaux</h3>
+                <p>Configuration de routeurs, commutateurs et protocoles réseaux.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio en ligne</h3>
+                <p>Création de mon propre site portfolio en HTML, CSS et JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>Cyber Sécurité</h3>
+                <p>Expérience en protection des systèmes d'information et analyse de vulnérabilités.</p>
+            </div>
+            <div class="project-card">
+                <h3>Procédures d'installation</h3>
+                <p>Installation de machines virtuelles sous Windows, Linux, Debian et Pfsense.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email : <a href="mailto:lleclercvigneron@gmail.com">lleclercvigneron@gmail.com</a></p>
+        <p>Téléphone : 06 43 24 20 12</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lucas Leclerc. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
